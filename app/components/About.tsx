@@ -17,7 +17,7 @@ const About = () => {
             </div>
             <div className='flex-1'>
                 <p className='mb-10 max-w-2xl font-Ovo'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore possimus fugit vero perferendis eligendi illum, voluptates voluptatibus natus velit. Aperiam maiores dolorem temporibus aliquid suscipit tenetur dolorum sed debitis, ipsa tempora laborum voluptas officiis, placeat nemo ea assumenda dignissimos similique!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore possimus fugit vero perferendis eligendi illum, voluptates voluptatibus natus velit. 
                 </p>
                 <br />
                 <p className='mb-10 max-w-2xl font-Ovo'>
