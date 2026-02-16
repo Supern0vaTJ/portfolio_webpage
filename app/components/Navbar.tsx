@@ -33,8 +33,8 @@ function Navbar() {
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-white shadow-sm bg-opacity-50"}`}>
           <li><a href="#top">Home</a></li>
           <li><a href="#about">About me</a></li>
-          <li><a href="#projects">Projects</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact me</a></li>
         </ul>
 
@@ -44,7 +44,7 @@ function Navbar() {
             <Image src={assets.moon_icon} alt="" className="w-6" />
           </button> */}
           <a className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4" href="#contact">
-            Contact <Image src={assets.arrow_icon} alt={""} className="w-3" />
+            Blog <Image src={assets.arrow_icon} alt={""} className="w-3" />
           </a>
 
           {/* Mobile menu button */}

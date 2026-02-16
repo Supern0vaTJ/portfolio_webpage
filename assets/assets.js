@@ -37,8 +37,26 @@ import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import katana_icon from './katana.png';
 import samurai_icon from './samurai.png';
+import postman_icon from './postman.png';
+import jira_icon from './jira.png';
+import jenkins_icon from './jenkins.jpg';
+import springboot_icon from './spring-boot.png';
+import IntelliJ_icon from './IntelliJ_IDEA.png';
+import backend from './backend.jpg';
+import frontend from './frontend0.jpg';
+import database from './database.jpg';
+import devops from './devops.webp';
 
 export const assets = {
+    backend,
+    frontend,
+    database,
+    devops,
+    postman_icon,
+    jira_icon,
+    jenkins_icon,
+    springboot_icon,
+    IntelliJ_icon,
     user_image,
     code_icon,
     code_icon_dark,
@@ -104,18 +122,19 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Web development', description: 'End-to-end development of scalable web applications using React/Next.js and Spring Boot. From secure authentication to payment integrations and optimized APIs — I build complete, production-ready systems.', link: '' },
+    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Cross-platform mobile application development using React Native, delivering high-performance iOS and Android apps from a single codebase. Focused on scalable architecture, API integration, optimized performance, and seamless user experience — ensuring consistent functionality across devices.', link: '' },
+    { icon: assets.ui_icon, title: 'Backend & Database', description: 'Design and implementation of secure, high-performance REST APIs with Spring Boot. Includes authentication (JWT/OAuth2), validation, error handling, and comprehensive testing. Improving application speed and database efficiency through query tuning, caching strategies, and frontend optimization — reducing load times and increasing user satisfaction. ', link: '' },
+    { icon: assets.graphics_icon, title: 'Cloud & DevOps', description: 'Containerized deployments with Docker, CI/CD automation, and cloud deployment on AWS. Focused on reliability, scalability, and smooth release cycles.', link: '' },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.backend, iconDark: assets.code_icon_dark, title: 'Backend Development', description: 'Java & Springboot, RESTful API, Microservices - Spring cloud, JWT & OAuth2 authentication, Resilience4J for fault tolerance, JUnit-based unit & Jest - integration testing' },
+    { icon: assets.frontend, iconDark: assets.edu_icon_dark, title: 'Frontend Development', description: 'React.js & Next.js for dynamic & responsive UI, Performance optimization & Component-driven architecture, Modern UI/UX debugging and refinement' },
+    { icon: assets.database, iconDark: assets.project_icon_dark, title: 'Database', description: 'PostgreSQL, MySQL, MongoDB, Query optimization - Spring Data JPA & Hibernate ORM' },
+    { icon: assets.devops, iconDark: assets.project_icon_dark, title: 'DevOps', description: 'Docker & Kubernetes for containerization & orchestration, CI/CD pipeline implementation, Jenkins, Maven, AWS & cloud-native deployments' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git,assets.IntelliJ_icon, assets.jenkins_icon,assets.jira_icon,assets.postman_icon,assets.springboot_icon
 ];

@@ -1,52 +1,59 @@
-import React from 'react'
-import { assets } from '@/assets/assets'
-import Image from 'next/image'
-import { infoList } from '@/assets/assets'
-import { toolsData } from '@/assets/assets'
+import React from "react";
+import Image from "next/image";
+import { infoList, toolsData } from "@/assets/assets";
 
 const About = () => {
   return (
-    <div id='about' className='w-full px-[12%] py-10 scroll-mt-20'>
-        <h4 className='text-center mb-2 text-lg font-Ovo'>Introduction</h4>
-        <h2 className='text-center text-5xl font-Ovo'>About Me</h2>
+    <section
+      id="about"
+      className="w-full px-6 sm:px-10 md:px-16 lg:px-24 py-16 scroll-mt-20"
+    >
+      {/* Section Title */}
+      <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-Ovo mb-10">
+        What I Know
+      </h2>
 
-        <div className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
-            <div className='w-64 sm:w-80 rounded-3xl max-w-none'>
-                <Image src={assets.user_image} alt='user'
-                className='w-full rounded-3xl'/>
-            </div>
-            <div className='flex-1'>
-                <p className='mb-10 max-w-2xl font-Ovo'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore possimus fugit vero perferendis eligendi illum, voluptates voluptatibus natus velit. 
-                </p>
-                <br />
-                <p className='mb-10 max-w-2xl font-Ovo'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex optio facilis rerum! Qui, minima. Praesentium similique modi ipsam, eligendi quibusdam recusandae, tempora ducimus tenetur sit velit consequatur possimus inventore aspernatur dicta obcaecati commodi incidunt molestias quaerat perspiciatis vel quia officiis! Cupiditate culpa dolores quasi et quam aspernatur eligendi explicabo quae possimus autem voluptas, deleniti numquam eos dolor officiis, officia aut!
-                </p>
+      <div className="max-w-6xl mx-auto flex flex-col items-center">
+        
+        {/* Description */}
+        <p className="text-center md:text-left mb-12 max-w-3xl text-gray-700 leading-relaxed">
+          Proficient in designing robust backend services using Java and Spring Boot, and crafting responsive, user-centric interfaces with JavaScript, React, and Next.js. Known for translating complex requirements into clean, maintainable code and delivering reliable solutions in fast-paced environments.
+        </p>
 
-                <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
-                    {infoList.map(({icon, title, description},index)=>(
-                        <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black' key={index}>
-                            <Image src={icon} alt={title} className='w-7 mt-3' />
-                            <h3 className='my-4 font-semibold text-gray-700'>{title}</h3>
-                            <p className='text-gray-600 text-sm'>{description}</p>
-                        </li>
-                    ))
+        {/* Info Cards */}
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+          {infoList.map(({ icon, title, description }, index) => (
+            <li
+              key={index}
+              className="border border-gray-300 rounded-xl p-6 hover:bg-lightHover hover:-translate-y-1 hover:shadow-md transition duration-300"
+            >
+              <Image src={icon} alt={title} className="w-15 mb-5" />
+              <h3 className="mb-2 font-semibold text-gray-800">{title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                {description}
+              </p>
+            </li>
+          ))}
+        </ul>
 
-                    }
-                </ul>
-                <h4 className='my-6 text-gray-700 font-Ovo'>Tools I use</h4>
-                <ul className='flex items-center gap-3 sm:gap-5'>
-                    {toolsData.map((tool, index)=>(
-                        <li className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black' key={index}>
-                            <Image src={tool} alt='tool' className='w-5 sm:w-7' />
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        </div>
-    </div>
-  )
-}
+        {/* Tools Section */}
+        <h4 className="mt-14 mb-6 text-gray-700 font-Ovo text-lg">
+          Tools I Use
+        </h4>
 
-export default About
+        <ul className="flex flex-wrap justify-center gap-4 sm:gap-6 max-w-3xl">
+          {toolsData.map((tool, index) => (
+            <li
+              key={index}
+              className="flex items-center justify-center w-12 sm:w-14 md:w-16 aspect-square border border-gray-300 rounded-lg hover:bg-lightHover hover:-translate-y-1 hover:shadow-md transition duration-300"
+            >
+              <Image src={tool} alt="tool" className="w-5 sm:w-7 md:w-8" />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+};
+
+export default About;
